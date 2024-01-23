@@ -6,20 +6,7 @@
     <title>Hockey's Club</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#E76F51',
-            'bike-primary': '#E76F51',
-            'bike-primary-bg':'#264653',
-          }
-        }
-      }
-    }
-  </script>
+<html data-theme="light"></html>
   <!-- Font's -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +15,38 @@
    .font-manrope{
     font-family: 'Manrope', sans-serif;
    }
+   .badge{
+      padding: 32px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+   }
+   .design{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+   }
+   .design-two{
+    color: #131318;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+   }
+   .design-three{
+    color: rgba(19, 19, 24, 0.60);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+   }
 </style>
 <script>
     tailwind.config = {
@@ -35,7 +54,7 @@
         extend: {
           colors: {
             'btn-primary': 'text-green-500',
-            clifford: '#da373d',
+            'btn-second': 'bg-green-500',
             clifford: '#da373d',
             clifford: '#da373d',
           }
@@ -45,6 +64,7 @@
   </script>
 </head>
 <body>
+  <!-- Header-Section -->
     <header class="md:container md:mx-auto">
         <nav>
             <div class="navbar bg-base-100">
@@ -80,12 +100,151 @@
                 </div>
               </div>
         </nav>
+        <!-- slide -->
+        <div class="carousel h-[550px] w-full ">
+          <div id="slide1" class="carousel-item relative w-full">
+           <div class="flex"></div>
+           <div><img src="Images/1.png" class="w-full" /></div>
+           <!-- Badge -->
+            <div class="absolute flex  transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+              <!-- Badge -->
+              <div class="badge"><h3><span class="design">Meet all the heroes from the field</span></h3><br>
+                <p>Gear up,lace'em tight,and join us as we skate towards victory – Hockey's Club,<br>where every moment on the ice is a testament to our commitment to the game we love.</p>
+                </div>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="Images/4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
         <div>
 
         </div>
     </header>
     <main class="md:container md:mx-auto">
-
+      <div>
+        <h2 class="font-family text-4xl font-manrope design-two">Professional Hockey's Club</h2><br>
+        <p class="design-three">Welcome to the pinnacle of professional hockey, <br>where skill meets spectacle and passion ignites the ice– welcome to Professional Hockey Club. <br> As an elite force in the world of hockey,we stand as a beacon of excellence,<br> embodying the highest standards of the sport.</p>
+      </div>
     </main>
+    <!-- Progress-Bar-Section -->
+    <section class="flex">
+      <!-- Card-1 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+              <div class="radial-progress text-red-500" style="--value:87;" role="progressbar"><span class="text-black">87%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Player Facility</h2>
+            <p>Strap on your gear,step onto the hallowed grounds,and embrace the path to athletic greatness Hockey's Player Facility,where champions are forged and limits are redefined.</p>
+            
+          </div>
+       </div>
+       <!-- Card-2 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+              <div class="radial-progress text-green-500" style="--value:95;" role="progressbar"><span class="text-black">95%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Experienced Coach</h2>
+            <p>Welcome to the realm of excellence, where guidance meets expertise welcome to the world of our Experienced Coach. With a wealth of knowledge and a track record of success,our coach stands as a beacon of inspiration and mentorship in the pursuit of greatness.</p>
+            
+          </div>
+      </div>
+      <!-- Card-3 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+              <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar"><span class="text-black">90%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Senior Player</h2>
+            <p>Gear up,stand shoulder to shoulder, and step into the arena with our Senior Player where experience meets ambition, and every game is a chapter in a story written with the ink of dedication and seasoned skill.</p>
+            
+          </div>
+      </div>
+      <!-- Card-4 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+              <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar"><span class="text-black">80%</span></div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Training Ground</h2>
+            <p>Beyond the physical aspects, our Training Ground is a melting pot of inspiration and mentorship. Coaches, trainers,and fellow athletes converge to create an environment where knowledge is shared,camaraderie is forged,and a collective pursuit of improvement takes center stage.</p>
+            
+          </div>
+      </div>
+    </section>
+    <!-- Program-Section -->
+    <section>
+      <h2 class="font-family text-4xl font-manrope design-two">Program Sections</h2><br>
+      <p class="design-three">Welcome to the diverse landscape of Hockey Program Sections,<br> where our commitment to excellence is reflected in every facet of our offerings. <br> Each Program Section serves as a distinct realm,<br> meticulously designed to cater to unique interests, nurture talents, <br> and foster a holistic learning experience.</p>
+    </section>
+    <!-- Second-Card-Section -->
+    <section>
+      <div class="flex grid grid-cols-2">
+        <!-- 2nd-Card-1 -->
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
+          <figure><img src="Images/2.png" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Junior Program</h2>
+            <p>As participants in our Junior Program,young athletes embark on a journey of self-discovery,camaraderie,and skill enhancement.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-second bg-green-500 text-white">Register Now!</button>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd-Card-2 -->
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
+          <figure><img src="Images/3.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Teenager Program</h2>
+            <p>As participants in our Teenager Program,young athletes are not just honing their skills;they are becoming part of a community that values growth camaraderie,and the joy of playing the game.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-second bg-green-500 text-white">Register Now!</button>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd-Card-3 -->
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
+          <figure><img src="Images/4.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Professional Program</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-second bg-green-500 text-white">Register Now!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4th-Section -->
+    <section>
+      <h2 class="font-family text-4xl font-manrope design-two">Our New Products</h2>
+      <p class="design-three">As we proudly present these new additions,we invite you to explore a world of possibilities.<br>Whether you're seeking efficiency in your work,style in your accessories,<br>or simply looking to embrace the latest advancements,Our New Products have something for everyone.</p>
+    </section>
+    <!-- Product-Section -->
+    <section>
+      ju
+    </section>
 </body>
 </html>
