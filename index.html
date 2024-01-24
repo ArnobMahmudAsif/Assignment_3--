@@ -68,6 +68,21 @@
     font-size: 28px;
     font-weight: 800;
   }
+  .design-seven{
+    color: #ffffff;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .design-nine{
+    color: #ffffff;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
    .same{
     width: 48px;
     height: 48px;
@@ -81,8 +96,6 @@
           colors: {
             'btn-primary': 'text-green-500',
             'btn-second': 'bg-green-500',
-            clifford: '#da373d',
-            clifford: '#da373d',
           }
         }
       }
@@ -783,70 +796,61 @@
     </section>
 <!-- Login-Section -->
     <section>
-      <div class="flex flex-row-reverse">
-        <div class="hero min-h-screen bg-base-200">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-            <div class="card shrink-0 w-full shadow-2xl bg-base-100">
-              <form class="card-body">
-                <div class="flex gap-4 grid-cols-2">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="design-five">Your Name</span>
-                  </label>
-                  <input type="email" placeholder="Enter your full name" class="input input-bordered" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="design-five">Your Email</span>
-                  </label>
-                  <input type="email" placeholder="Enter your email" class="input input-bordered" required />
-                </div>
-              </div>
-              <div class="flex gap-4 grid-cols-2">
-                <div class="form-control">
-                  <label class="label">
-                    <span class="design-five">Subject</span>
-                  </label>
-                  <input type="password" placeholder="Enter your subject" class="input input-bordered" required />
-                </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="design-five">Your Phone Number</span>
-                  </label>
-                  <input type="password" placeholder="Enter your phone number" class="input input-bordered" required />
-                </div>
-              </div>
-                <div class="form-control">
-                  <label class="label">
-                    <span class="design-five">Massage</span>
-                  </label>
-                  <input type="text" placeholder="Write your message" class="input input-bordered input-lg w-full max-w-xs" />
-                </div>
-      
-                <div class="form-control mt-6">
-                  <button class="btn bg-green-500"><span class="text-white">Send Message</span></button>
-                </div>
-              </form>
+      <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 ">
+        <div>
+          <div class="w-50 h-50 rounded-lg bg-green-100 justify-center flex col items-center mx-auto">
+            <div class="h-16 w-16 items-center justify-center">
+              <img src="Images/Group 1171275317.png" alt="">
             </div>
+            <div class="text-center space-y-4"><h5>Phone Number:</h5>
+              <p><h2>(+62)123-321-543</h2></p></div>
           </div>
         </div>
-      
-         <div class="card rounded-2xl bg-green-100">
-          <img class="same" src="Images/Group 1171275317.png" alt="">
-          <p class="card-stats">Phone Number:</p>
-          <h2 class="card-title">(+90)543-321-123</h2>
-         </div>
-         <div class="card rounded-2xl bg-blue-100">
-          <img class="same" src="Images/Group 1171275318.png" alt="">
-          <p class="card-stats">Email:</p>
-          <h2 class="card-title">hockeys@support.com</h2>
-         </div>
-         <div class="card rounded-2xl bg-yellow-100">
-          <img class="same" src="Images/Group 1171275321.png" alt="">
-          <p class="card-stats">Location:</p>
-          <h2 class="card-title">157/1 Shantinagor</h2>
-         </div>
+        <div>
+          <div class="w-50 h-50 rounded-lg bg-green-100 justify-center flex col items-center mx-auto">
+            <div class="h-16 w-16 items-center justify-center">
+              <img src="Images/Group 1171275318.png" alt="">
+            </div>
+            <div class="text-center space-y-4"><h5>Email:</h5>
+              <p><h2>hockeys@support.com</h2></p></div>
+          </div>
         </div>
+        <div>
+          <div class="w-50 h-50 rounded-lg bg-green-100 justify-center flex col items-center mx-auto">
+            <div class="h-16 w-16 items-center justify-center">
+              <img src="Images/Group 1171275321.png" alt="">
+            </div>
+            <div class="text-center space-y-4"><h5>Location:</h5>
+              <p><h2>175/1 Gulshan,Dhaka</h2></p></div>
+          </div>
+        </div>
+       <!-- Input-Section -->
+        <div class="lg:col-span-2">
+          <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+            <div>
+              <label for="">Your Name</label>
+            <input type="text" placeholder="Enter your full name" class="mt-2 input input-bordered w-full" />
+            </div>
+            <div>
+              <label for="">Your Email</label>
+            <input type="text" placeholder="Enter your email" class="mt-2 input input-bordered w-full" />
+            </div>
+          <div>
+            <label for="">Subjects</label>
+            <input type="text" placeholder="Enter your subjects" class="mt-2 input input-bordered w-full" />
+          </div>
+          <div>
+            <label for="">Phone Number</label>
+          <input type="text" placeholder="Enter your phone number" class="mt-2 input input-bordered w-full" />
+          </div>
+        </div>
+        <div>
+          <label for="">Message</label>
+         <textarea class=" w-full mt-2 textarea textarea-bordered" placeholder="Write your message" rows="7"></textarea>
+        </div>
+        <button class="btn bg-green-500 mt-2 text-white w-full">Send Message</button>
+        </div>
+      </div>
     </section>
 <!-- Footer-Section-1 -->
     <section>
@@ -868,32 +872,35 @@
     </section>
 <!-- Footer-Section-2 -->
     <section>
-      <footer class="footer p-10 bg-base-200 text-base-content">
+      <footer class="footer p-10 bg-black text-white text-base-content">
         <aside>
-          <h3 class="design-six">Get In Touch.</h3><br>
+          <h3 class="design-seven text-white">Get In Touch.</h3><br>
           <p>Connect with us effortlessly for personalized<br>assistance and unparalleled support.</p><br>
-          <p></p>
           <p>hockeys@support.com</p>
+          <p>(+62)123-321-543</p>
         </aside> 
         <nav>
-          <header class="footer-title">Company</header> 
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Support</header> 
+          <header class="footer-title design-nine">Company</header> 
           <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
+          <a class="link link-hover">Leadership</a>
+          <a class="link link-hover">Careers</a>
+          <a class="link link-hover">News & Article</a>
+          <a class="link link-hover">Legal Notice</a>
         </nav> 
         <nav>
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
+          <header class="footer-title design-nine">Support</header> 
+          <a class="link link-hover">Help Center</a>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Ticket Support</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav> 
+        <nav>
+          <header class="footer-title design-nine">Services</header> 
+          <a class="link link-hover">Academy</a>
+          <a class="link link-hover">Group Lesson</a>
+          <a class="link link-hover">Private Lesson</a>
+          <a class="link link-hover">Hockeys for kids</a>
+          <a class="link link-hover">Hockeys for Adult</a>
         </nav>
       </footer>
     </section>
